@@ -29,3 +29,11 @@ cd tic-tac-toe
 python tic_tac_toe.py
 ```
 
+## How to Play
+1. The game starts with a blank 3x3 grid.
+2. The player (symbol 'X') goes first and clicks on an empty cell to place their symbol.
+3. The CPU (symbol 'O') makes its move automatically after the player's move.
+4. Continue taking turns until one player wins or the board is full.
+5. If there's a winner, a message will appear to declare the winner.
+6. If the board is full with no winner, the game ends in a tie.
+
