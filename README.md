@@ -41,3 +41,8 @@ python tic_tac_toe.py
 - Python 3.x
 - tkinter library (usually included with Python installations)
   
+## Potential Features
+- Larger boards 4x4, 5x5, 6x6
+- Player vs Player
+- Player vs Player vs CPU on larger boards
+
