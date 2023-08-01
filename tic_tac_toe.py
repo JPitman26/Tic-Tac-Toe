@@ -107,3 +107,58 @@ def play_tic_tac_toe():
     board = [[" " for _ in range(3)] for _ in range(3)]
     players = ["X", "O"]
 
+    def on_click(row, col):
+        """
+        Handles the player's move when a button on the GUI is clicked.
+
+        Args:
+            row (int): The row of the clicked button.
+            col (int): The column of the clicked button.
+        """
+        if board[row][col] == " ":
+            player = players[0]
+            board[row][col] = player
+            button = buttons[row * 3 + col]
+            button.config(text=player, state=tk.DISABLED)
+
+            if check_winner(board, player):
+                print_board(board)
+                messagebox.showinfo("Tic-Tac-Toe", f"Player {player} wins!")
+                root.quit()
+                return
+
+            if is_board_full(board):
+                print_board(board)
+                messagebox.showinfo("Tic-Tac-Toe", "It's a tie!")
+                root.quit()
+                return
+
+            row, col = cpu_move(board, players[1])
+            button = buttons[row * 3 + col]
+            button.config(text=players[1], state=tk.DISABLED)
+
+            if check_winner(board, players[1]):
+                messagebox.showinfo("Tic-Tac-Toe", f"Player {players[1]} wins!")
+                root.quit()
+                return
+
+            if is_board_full(board):
+                messagebox.showinfo("Tic-Tac-Toe", "It's a tie!")
+                root.quit()
+                return
+
+    root = tk.Tk()
+    root.title("Tic-Tac-Toe")
+    root.geometry("300x300")
+
+    buttons = []
+    for i in range(3):
+        for j in range(3):
+            button = tk.Button(root, text=" ", width=10, height=5, command=lambda row=i, col=j: on_click(row, col))
+            button.grid(row=i, column=j)
+            buttons.append(button)
+
+    root.mainloop()
+
+if __name__ == "__main__":
+    play_tic_tac_toe()
