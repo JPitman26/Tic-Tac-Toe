@@ -77,3 +77,23 @@ def get_input(board, player, row, col):
         col.set(0)
     # No need for CPU move in this function
 
+def cpu_move(board, player):
+    """
+    Simulates the CPU's move by generating random row and column values.
+
+    Args:
+        board (list): A 2D list representing the Tic-Tac-Toe board.
+        player (str): The player's symbol ('X' or 'O').
+
+    Returns:
+        int: The chosen row for the CPU's move.
+        int: The chosen column for the CPU's move.
+    """
+    while True:
+        row = random.randint(0, 2)
+        col = random.randint(0, 2)
+        if board[row][col] == " ":
+            board[row][col] = player
+            print(f"CPU chose row {row + 1} and column {col + 1}")
+            return row, col
+
