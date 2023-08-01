@@ -5,3 +5,9 @@ This is a simple implementation of the classic Tic-Tac-Toe game with a graphical
 
 The GUI provides a user-friendly interface for playing the game, and the CPU makes random moves as the second player.
 
+## Features
+- Graphical User Interface (GUI) for an interactive gaming experience.
+- Human vs CPU gameplay for single-player mode.
+- Automatic detection of winning conditions and ties.
+- Random CPU moves for a challenging experience.
+
