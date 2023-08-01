@@ -97,3 +97,13 @@ def cpu_move(board, player):
             print(f"CPU chose row {row + 1} and column {col + 1}")
             return row, col
 
+def play_tic_tac_toe():
+    """
+    The main function to play the Tic-Tac-Toe game with a GUI.
+
+    This function sets up the graphical user interface, handles player 
+    input, and simulates the CPU's moves using the CPU_move function.
+    """
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    players = ["X", "O"]
+
