@@ -37,3 +37,7 @@ python tic_tac_toe.py
 5. If there's a winner, a message will appear to declare the winner.
 6. If the board is full with no winner, the game ends in a tie.
 
+## Requirements
+- Python 3.x
+- tkinter library (usually included with Python installations)
+  
