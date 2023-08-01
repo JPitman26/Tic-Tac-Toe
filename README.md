@@ -11,3 +11,21 @@ The GUI provides a user-friendly interface for playing the game, and the CPU mak
 - Automatic detection of winning conditions and ties.
 - Random CPU moves for a challenging experience.
 
+## Getting Started
+To run the Tic-Tac-Toe game, follow these steps:
+
+1. Clone the repository to your local machine using the following command:<br>
+```bash
+git clone https://github.com/JPitman26/Tic-Tac-Toe
+```
+
+2. Navigate to the project directory:<br>
+```bash
+cd tic-tac-toe
+```
+
+3. Run the Python script to start the game:
+```bash
+python tic_tac_toe.py
+```
+
