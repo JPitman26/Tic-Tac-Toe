@@ -49,3 +49,7 @@ python tic_tac_toe.py
 ## Contributing
 Contributions to this project are welcome! If you find any issues or want to add new features, feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+
