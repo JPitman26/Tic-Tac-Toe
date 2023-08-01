@@ -40,3 +40,19 @@ def check_winner(board, player):
 
     return False
 
+def is_board_full(board):
+    """
+    Checks if the Tic-Tac-Toe board is full.
+
+    Args:
+        board (list): A 2D list representing the Tic-Tac-Toe board.
+
+    Returns:
+        bool: True if the board is full, False otherwise.
+    """
+    for row in board:
+        for cell in row:
+            if cell == " ":
+                return False
+    return True
+
